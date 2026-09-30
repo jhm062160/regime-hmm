@@ -78,7 +78,7 @@ VAL_END = "2018-12"
 TEST_START = "2019-01"
 PERIODS = {"train": slice(None, TRAIN_END), "val": slice(VAL_START, VAL_END), "test": slice(TEST_START, None)}
 
-# The model grid of the first version: a fixed core plus every subset of the
+# The model grid: a fixed core plus every subset of the
 # optional variables, 64 sets x 3 regime counts = 192 models.
 CORE = ["SP500", "VIX", "T10Y2YM", "BAA10YM", "PCE"]
 OPTIONAL = ["INDPRO", "PAYEMS", "AWHNONAG", "AWHMAN", "ICSA", "UNRATE"]

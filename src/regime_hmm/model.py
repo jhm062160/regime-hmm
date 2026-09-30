@@ -17,7 +17,7 @@ logging.getLogger("hmmlearn").setLevel(logging.ERROR)
 OUTLIER = 0
 MARKET_RETURN = "SP500"  # orders the normal regimes from bear (1) to bull (n_normal)
 DELTA = 1.0  # Laplace smoothing added to every start and transition count
-N_INIT = 500  # K-means restarts per run, as in the first version
+N_INIT = 500  # K-means restarts per run
 # Pseudo-observations pulling each state's covariance towards its own diagonal.
 # The outlier state has far fewer months than a full matrix needs.
 SHRINKAGE = 10.0
